@@ -15,6 +15,9 @@
 
 DevElevate is a full-stack, AI-powered smart education and career advancement platform built to empower students, developers, and job seekers. It centralizes learning resources, personalized roadmaps, job updates, resume tools, and much more — all in one powerful dashboard.
 
+
+**📊 Project Insights**
+
 <table align="center">
     <thead align="center">
         <tr>
