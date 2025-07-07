@@ -2,9 +2,6 @@
 
 Welcome back, Developer! 👋 Ready to continue your learning journey?
 
-
-# 🚀 DevElevate
-
 **Your Personalized Smart Learning & Placement Hub**
 
 ![logo](https://github.com/user-attachments/assets/8b804ec3-1390-4acb-84c7-adf1050fd54c)
