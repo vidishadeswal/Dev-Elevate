@@ -218,13 +218,7 @@ npm run dev
 
 ---
 
-## 🌐 Connect with Me
 
-- 👨‍💻 **Website Creator:** Abhisek Panda  
-- 🌍 **Portfolio:** [https://abhisekpanda072.vercel.app](https://abhisekpanda072.vercel.app)  
-- 🐙 **GitHub:** [https://github.com/abhisek2004](https://github.com/abhisek2004)  
-- 💼 **LinkedIn:** [https://www.linkedin.com/in/abhisekpanda2004/](https://www.linkedin.com/in/abhisekpanda2004/)  
-- 🚧 **Project Repo:** [https://github.com/abhisek2004/Dev-Elevate](https://github.com/abhisek2004/Dev-Elevate)
 
 ---
 
