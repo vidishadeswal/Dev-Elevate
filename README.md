@@ -52,6 +52,23 @@
 </div>
 --->
 
+## 🎯 Open Source Programmes ⭐
+
+🌟 **Exciting News Incoming...**
+🚀 This project is **very, very soon** going to be a part of **GirlScript Summer of Code 2025 – GSSoC 2025**! 💃🎉💻
+
+👩‍💻 GSSoC is one of India’s **largest 3-month-long open-source programs** that encourages developers of all levels to contribute to real-world projects 🌍 while learning, collaborating, and growing together. 🌱
+
+🌈 With **mentorship, community support**, and **collaborative coding**, it's the perfect platform for developers to:
+
+✨ Improve their skills
+🤝 Contribute to impactful projects
+🏆 Get recognized for their work
+📜 Receive certificates and swag!
+
+🎉 **I can’t wait to welcome new contributors** from GSSoC 2025 to this DevElevate project family!
+Let’s build, learn, and grow together — one commit at a time. 🔥👨‍💻👩‍💻
+
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 ![logo](https://github.com/user-attachments/assets/8b804ec3-1390-4acb-84c7-adf1050fd54c)
