@@ -44,7 +44,7 @@
     </tbody>
 </table>
 
-
+<!---
 <h2 align="center">🎯 Open Source Programmes ⭐</h2>
 
 <p align="center">
@@ -54,6 +54,7 @@
 <div align="center">
   <img src="https://github.com/apu52/METAVERSE/assets/114172928/e79eb6de-81b1-4ffb-b6ed-f018bb977e88" alt="GSSOC" width="80%">
 </div>
+--->
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
