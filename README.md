@@ -355,6 +355,6 @@ Includes:
 
 <div align="right">
 
-🔝 [**Back to Top**](#top) • [⏫](#top)
+🔝 [**Back to Top**](#top)
 
 </div>
