@@ -11,11 +11,6 @@
 
 **Your Personalized Smart Learning & Placement Hub**
 
-![logo](https://github.com/user-attachments/assets/8b804ec3-1390-4acb-84c7-adf1050fd54c)
-
-
-**DevElevate is a full-stack, AI-powered smart education and career advancement platform built to empower students, developers, and job seekers. It centralizes learning resources, personalized roadmaps, job updates, resume tools, and much more — all in one powerful dashboard.**
-
 
 **📊 Project Insights**
 
@@ -55,6 +50,14 @@
   <img src="https://github.com/apu52/METAVERSE/assets/114172928/e79eb6de-81b1-4ffb-b6ed-f018bb977e88" alt="GSSOC" width="80%">
 </div>
 --->
+
+
+![logo](https://github.com/user-attachments/assets/8b804ec3-1390-4acb-84c7-adf1050fd54c)
+
+
+**DevElevate is a full-stack, AI-powered smart education and career advancement platform built to empower students, developers, and job seekers. It centralizes learning resources, personalized roadmaps, job updates, resume tools, and much more — all in one powerful dashboard.**
+
+
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
