@@ -99,15 +99,14 @@ Includes:
 
 | Layer         | Tech Used                                         |
 | ------------- | ------------------------------------------------- |
-| Frontend      | React.js, Tailwind CSS, Shadcn UI, Axios          |
-| Backend       | Node.js + Express / Python Flask                  |
-| Database      | MongoDB + Mongoose                                |
-| Auth          | Firebase / JWT                                    |
-| AI Chatbot    | GPT-4 API, LangChain, Pinecone                    |
+| Frontend      | Typescript, Tailwind CSS, Shadcn UI, Axios          |
+| Backend       | Node.js + Express                   |
+| Database      | MongoDB Atlas                                |
+| Auth          | JWT                                    |
+| AI Chatbot    | GPT-4 API, any other                    |
 | Resume Engine | HTML2PDF, GPT Suggestion APIs                     |
 | APIs          | YouTube API, Google Sheets API, News API          |
-| Hosting       | Vercel (Frontend), Railway / Render (Backend)     |
-| File Storage  | Firebase, Cloudinary                              |
+| Hosting       | Vercel      |
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
