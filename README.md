@@ -7,7 +7,7 @@ Welcome back, Developer! 👋 Ready to continue your learning journey?
 
 **Your Personalized Smart Learning & Placement Hub**
 
-![DevElevate Banner](![logo](https://github.com/user-attachments/assets/ffcafba2-8d8e-47bd-b0d9-cc89948497c3)
+[logo](https://github.com/user-attachments/assets/ffcafba2-8d8e-47bd-b0d9-cc89948497c3)
 
 
 DevElevate is a full-stack, AI-powered smart education and career advancement platform built to empower students, developers, and job seekers. It centralizes learning resources, personalized roadmaps, job updates, resume tools, and much more — all in one powerful dashboard.
