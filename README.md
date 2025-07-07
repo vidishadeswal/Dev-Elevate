@@ -27,6 +27,118 @@ To help learners and aspiring professionals master skills like DSA, Java, MERN S
 
 > ⚙️ **Each page must be implemented with complete functionality, bug-free execution, proper routing, clean UI/UX, and complete backend integration.**
 
+---
+
+### 🔐 Authentication & Role-Based Access System
+
+A complete, secure system for login, registration, and role-based control for **Users** and **Admins**, built with robust functionality and UI differentiation.
+
+---
+
+#### 🧑‍💻 **User/Admin Unified Login & Registration**
+
+* 🔐 Single login/register page with role toggle:
+
+  * 👤 *User Mode:* Access learning platform, dashboard, profile
+  * 🛡️ *Admin Mode:* Redirects to admin dashboard with controls
+* 🌐 Email + password auth (with OTP/2FA support – optional)
+* 🔁 Persistent session management (cookies / JWT)
+* 🚫 Incorrect role selection prevents access to restricted pages
+
+---
+
+#### 👤 **User Profile & Settings Page**
+
+A personalized profile section with full account control:
+
+* 🪪 View profile: name, email, course progress, resume link, bookmarks
+* ✏️ Edit Profile: update name, bio, social links, picture
+* 🔒 Change Password option
+* 📊 Progress Summary (modules, quizzes, assignments)
+* 💾 Save preferences (theme, notification settings, language)
+
+---
+
+#### 🧠 **Smart User Dashboard Includes:**
+
+* 🗂️ Current Courses Enrolled
+* 📈 Weekly Progress Analytics
+* 📌 Saved Notes, Bookmarks
+* 🔗 Resume Builder Shortcut
+* 🧠 Study Buddy Chat Access
+* 📥 Assignments Uploaded (track submission)
+* 🚀 Daily Goal Reminders + Streak Calendar
+
+---
+
+### 🛠️ Admin Panel – Full Control Dashboard
+
+A powerful admin dashboard to manage the platform without code:
+
+#### 👨‍💼 Admin Abilities:
+
+* 👥 **Manage Users:**
+
+  * View all registered users
+  * Delete, block, or update roles
+  * Monitor learning progress
+
+* 📚 **Manage Courses:**
+
+  * Add/Edit/Delete courses (DSA, Java, ML, etc.)
+  * Add topics, upload notes, quizzes, YouTube playlists
+  * Set prerequisites and learning path
+
+* 📄 **Manage Assignments/Quizzes:**
+
+  * Upload MCQs and coding problems
+  * View student submissions
+  * Auto-evaluate or manually grade
+
+* 📂 **Manage Content:**
+
+  * Upload Ebooks, Notes, PDFs
+  * Add links to YouTube or GitHub repos
+  * Approve/reject community submissions
+
+* 📣 **Tech Feed / Announcements:**
+
+  * Push tech news manually
+  * Auto-sync from NewsAPI
+  * Post custom announcements
+
+* 📰 **Newsletter & Email Manager:**
+
+  * Compose and send weekly digests
+  * Email verification for users
+  * View open rates (optional via SendGrid)
+
+* 📈 **Admin Analytics Dashboard:**
+
+  * Total users, active learners, quiz stats
+  * Most popular courses/modules
+  * Assignment success rate
+
+#### 🛡️ Security & Stability
+
+* 🔒 Protected admin routes
+* 🚫 Unauthorized access blocking (JWT + role middleware)
+* 🔁 All changes reflected in real-time (Socket.IO optional)
+
+---
+
+#### 📌 Summary of What’s Built:
+
+| Feature               | Functionality                                          |
+| --------------------- | ------------------------------------------------------ |
+| 🔐 Auth System        | Role-based login/signup with route protection          |
+| 👤 User Dashboard     | Track progress, edit profile, access learning & tools  |
+| 🧰 Admin Dashboard    | Manage users, courses, quizzes, uploads, announcements |
+| 📊 Profile System     | Update profile, change password, view analytics        |
+| 📂 Content Management | Upload notes, PDFs, playlists, quizzes from Admin      |
+| 📢 Role Routing       | Show specific UI based on role (User/Admin)            |
+
+---
 
 ## 🚀 Features
 
