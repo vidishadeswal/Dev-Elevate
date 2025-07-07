@@ -11,6 +11,7 @@
 
 **Your Personalized Smart Learning & Placement Hub**
 
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 **📊 Project Insights**
 
@@ -51,6 +52,7 @@
 </div>
 --->
 
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 ![logo](https://github.com/user-attachments/assets/8b804ec3-1390-4acb-84c7-adf1050fd54c)
 
