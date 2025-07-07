@@ -363,10 +363,7 @@ npm run dev
 - 💼 **LinkedIn:** [linkedin.com/in/abhisekpanda2004](https://www.linkedin.com/in/abhisekpanda2004/)
 - 🚧 **Project Repo:** [github.com/abhisek2004/Dev-Elevate](https://github.com/abhisek2004/Dev-Elevate)
 
-
 ---
-
-✨⭐
 
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=00C853&center=true&vCenter=true&width=700&lines=Thanks+for+visiting+DevElevate!+🙌;Start+the+repo+✅;Share+it+with+others+🌍;Contribute+and+grow+🛠️;Happy+Coding+✨!" alt="Thanks Banner Typing SVG" />
