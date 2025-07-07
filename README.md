@@ -361,3 +361,9 @@ npm run dev
 ---
 
 <h3 align="center">✨ Thank you for visiting! Consider ⭐ starring the repo if you like it!</h3>
+
+
+<!--Footer--> 
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=65&section=footer"/>
+</p>
