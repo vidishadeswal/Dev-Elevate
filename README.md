@@ -9,7 +9,7 @@ Welcome back, Developer! 👋 Ready to continue your learning journey?
 
 DevElevate is a full-stack, AI-powered smart education and career advancement platform built to empower students, developers, and job seekers. It centralizes learning resources, personalized roadmaps, job updates, resume tools, and much more — all in one powerful dashboard.
 
----
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 ## 🎯 Vision
 
@@ -87,7 +87,7 @@ Includes:
 - 🧰 Tools: Resume, Notepad, Roadmaps
 - 💬 Discord + Forum Integration
 
----
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 ## 🔧 Tech Stack
 
@@ -103,22 +103,37 @@ Includes:
 | Hosting       | Vercel (Frontend), Railway / Render (Backend)     |
 | File Storage  | Firebase, Cloudinary                              |
 
----
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+## 🌟 Summary – Trending Enhancements
+
+| Category           | Feature Examples                                      |
+|--------------------|--------------------------------------------------------|
+| 🧠 AI              | Career Advisor, Resume GPT, Roadmap Recommender       |
+| 🔁 Real-Time       | Collaborative Coding, Study Groups, Hackathons        |
+| 🎨 Personalization | One-Click Portfolio, Dark Mode, TTS, Resume Tools     |
+| 📢 Community       | Plugin Store, Forum, Mentorship Matching              |
+| 🎓 Learning        | Voice AI, Flashcards, Skill Graphs, Watch Mode        |
+| 🚀 Career          | Job Recommender, LinkedIn/GitHub Sync, Interview Bot  |
+| 🌍 Inclusive       | Multi-language, Accessibility Focus                   |
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 ## 🧑‍🤝‍🧑 Open Source Roles
 
-| Role                 | Responsibility                                  |
-| -------------------- | ----------------------------------------------- |
-| 📱 Frontend Lead     | Dashboard UI, Learning Pages, Resume UI         |
-| 🖥️ Backend Lead     | APIs for notes, quizzes, progress, resumes       |
-| 🤖 AI Integrator     | GPT, LangChain, Pinecone/Chroma vector DB       |
-| 🔌 API Dev           | Integrate YouTube, Google Sheets, NewsAPI       |
-| 🎨 UX Designer       | Layouts, themes, journeys                       |
-| 📝 Content Curator   | Notes, Quizzes, Assignments                     |
-| 🧪 QA / Tester        | Responsiveness, feature testing                 |
-| 📣 Outreach / Docs   | GitHub management, documentation, community     |
+| Role               | Responsibility                                |
+|--------------------|-----------------------------------------------|
+| 📱 Frontend Lead   | UI development (Dashboard, Learning, Resume)  |
+| 🖥️ Backend Lead   | APIs for users, resumes, quizzes, etc.         |
+| 🤖 AI Integrator   | LangChain, GPT APIs, Vector DB                |
+| 🔌 API Dev         | Integrate 3rd-party tools (GSheets, NewsAPI) |
+| 🎨 UX Designer     | UI/UX flows, accessibility                    |
+| 📝 Content Writer  | Notes, Quizzes, Assignments, Flashcards      |
+| 🧪 QA Tester       | Feature testing, bug fixing                   |
+| 📣 Community Lead  | Docs, Outreach, GitHub management             |
 
----
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 ## 🔥 Bonus Enhancements – Phase 2 / 3
 
@@ -248,36 +263,7 @@ Includes:
 - Match with peer/industry mentor
 - Based on interest, region, skillset
 
----
-
-## 🌟 Summary – Trending Enhancements
-
-| Category           | Feature Examples                                      |
-|--------------------|--------------------------------------------------------|
-| 🧠 AI              | Career Advisor, Resume GPT, Roadmap Recommender       |
-| 🔁 Real-Time       | Collaborative Coding, Study Groups, Hackathons        |
-| 🎨 Personalization | One-Click Portfolio, Dark Mode, TTS, Resume Tools     |
-| 📢 Community       | Plugin Store, Forum, Mentorship Matching              |
-| 🎓 Learning        | Voice AI, Flashcards, Skill Graphs, Watch Mode        |
-| 🚀 Career          | Job Recommender, LinkedIn/GitHub Sync, Interview Bot  |
-| 🌍 Inclusive       | Multi-language, Accessibility Focus                   |
-
----
-
-## 🧑‍🤝‍🧑 Team Roles
-
-| Role               | Responsibility                                |
-|--------------------|-----------------------------------------------|
-| 📱 Frontend Lead   | UI development (Dashboard, Learning, Resume)  |
-| 🖥️ Backend Lead   | APIs for users, resumes, quizzes, etc.         |
-| 🤖 AI Integrator   | LangChain, GPT APIs, Vector DB                |
-| 🔌 API Dev         | Integrate 3rd-party tools (GSheets, NewsAPI) |
-| 🎨 UX Designer     | UI/UX flows, accessibility                    |
-| 📝 Content Writer  | Notes, Quizzes, Assignments, Flashcards      |
-| 🧪 QA Tester       | Feature testing, bug fixing                   |
-| 📣 Community Lead  | Docs, Outreach, GitHub management             |
-
-
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 ## 🛠️ Getting Started
 
