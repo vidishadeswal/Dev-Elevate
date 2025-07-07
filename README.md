@@ -268,6 +268,17 @@ Includes:
 - Match with peer/industry mentor
 - Based on interest, region, skillset
 
+---
+
+## 🔥 Bonus Enhancements – Phase 3 / 3
+
+🧑‍🏫 Live AI Teaching Assistant (AI TA)
+- A real-time assistant that:
+- Answers coding doubts with explanations + code examples
+- Supports voice + text interaction
+- Offers instant feedback on quizzes or code
+-🛠️ Tech: GPT-4, LangChain Agents, Whisper API, Speech Synthesis
+
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 <table align="center">
