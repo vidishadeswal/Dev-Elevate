@@ -1,3 +1,4 @@
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 <h1 align="center">🚀 Dev_Elevate_GSSoC-2025 </h1>
 
 <!--- Welcome back, Developer! 👋 Ready to continue your learning journey? -->
@@ -13,7 +14,7 @@
 ![logo](https://github.com/user-attachments/assets/8b804ec3-1390-4acb-84c7-adf1050fd54c)
 
 
-DevElevate is a full-stack, AI-powered smart education and career advancement platform built to empower students, developers, and job seekers. It centralizes learning resources, personalized roadmaps, job updates, resume tools, and much more — all in one powerful dashboard.
+**DevElevate is a full-stack, AI-powered smart education and career advancement platform built to empower students, developers, and job seekers. It centralizes learning resources, personalized roadmaps, job updates, resume tools, and much more — all in one powerful dashboard.**
 
 
 **📊 Project Insights**
@@ -42,6 +43,20 @@ DevElevate is a full-stack, AI-powered smart education and career advancement pl
         </tr>
     </tbody>
 </table>
+
+<!---
+<h2 align="center">🎯 Open Source Programmes ⭐</h2>
+
+<p align="center">
+  <b>This project is now OFFICIALLY accepted for:</b>
+</p>
+
+<div align="center">
+  <img src="https://github.com/apu52/METAVERSE/assets/114172928/e79eb6de-81b1-4ffb-b6ed-f018bb977e88" alt="GSSOC" width="80%">
+</div>
+
+--->
+
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
@@ -438,20 +453,6 @@ Includes:
     <img src="https://api.vaunt.dev/v1/github/entities/abhisek2004/repositories/Dev-Elevate/contributors?format=svg&limit=54" width="700" height="250" />
   </a>
 </p>
-
-
-<!---
-<h2 align="center">🎯 Open Source Programmes ⭐</h2>
-
-<p align="center">
-  <b>This project is now OFFICIALLY accepted for:</b>
-</p>
-
-<div align="center">
-  <img src="https://github.com/apu52/METAVERSE/assets/114172928/e79eb6de-81b1-4ffb-b6ed-f018bb977e88" alt="GSSOC" width="80%">
-</div>
-
---->
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
