@@ -1,4 +1,3 @@
-# Dev-Elevate
 # Dev_Elevate_GSSoC-2025
 Welcome back, Developer! 👋 Ready to continue your learning journey?
 
