@@ -23,6 +23,11 @@ To help learners and aspiring professionals master skills like DSA, Java, MERN S
 
 ---
 
+## ⚠️ **🚨 All Pages Below Are Mandatory and Must Be Fully Functional Without Bugs**
+
+> ⚙️ **Each page must be implemented with complete functionality, bug-free execution, proper routing, clean UI/UX, and complete backend integration.**
+
+
 ## 🚀 Features
 
 ### 📚 Learning Hub
@@ -92,6 +97,15 @@ Includes:
 - 🧠 Study Buddy Access
 - 🧰 Tools: Resume, Notepad, Roadmaps
 - 💬 Discord + Forum Integration
+
+---
+
+### 🧾 **Error Pages (🚨 Required)**
+
+* ❌ 404 Not Found
+* 🔒 403 Forbidden
+* ⚠️ Validation/Submission Errors
+  
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
