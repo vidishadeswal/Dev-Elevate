@@ -270,26 +270,6 @@ Includes:
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
-## 🛠️ Getting Started
-
-# Clone the repository
-git clone https://github.com/abhisek2004/Dev-Elevate.git
-
-# Navigate to the project folder
-cd DevElevate
-
-# Install dependencies
-npm install
-
-# Run frontend and backend (example if using concurrently)
-npm run dev
-
----
-
-
-
-
-
 <table align="center">
     <thead align="center">
         <tr>
