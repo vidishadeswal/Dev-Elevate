@@ -1,4 +1,5 @@
-# Dev_Elevate_GSSoC-2025
+<h1 align="center">🚀 Dev_Elevate_GSSoC-2025 </h1>
+
 Welcome back, Developer! 👋 Ready to continue your learning journey?
 
 
@@ -152,7 +153,7 @@ npm run dev
 
 
 
-<h1 align="center">🚀 Dev-Elevate - Project Dashboard</h1>
+
 
 <table align="center">
     <thead align="center">
