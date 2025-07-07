@@ -368,6 +368,11 @@ npm run dev
 
 <h3 align="center">✨ Thank you for visiting! Consider ⭐ starring the repo if you like it!</h3>
 
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=00C853&center=true&vCenter=true&width=700&lines=Thanks+for+visiting+DevElevate!+🙌;Start+the+repo+✅;Share+it+with+others+🌍;Contribute+and+grow+🛠️;Happy+Coding+✨;Don't+forget+to+⭐+star+the+repo+if+you+like+it!" alt="Thanks Banner Typing SVG" />
+</div>
+
+
 
 <!--Footer--> 
 <p align="center">
