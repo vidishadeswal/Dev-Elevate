@@ -137,7 +137,7 @@ Includes:
 ## 🛠️ Getting Started
 
 # Clone the repository
-git clone https://github.com/your-username/DevElevate.git
+git clone https://github.com/abhisek2004/Dev-Elevate.git
 
 # Navigate to the project folder
 cd DevElevate
