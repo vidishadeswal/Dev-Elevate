@@ -1,6 +1,12 @@
 <h1 align="center">🚀 Dev_Elevate_GSSoC-2025 </h1>
 
-Welcome back, Developer! 👋 Ready to continue your learning journey?
+<!--- Welcome back, Developer! 👋 Ready to continue your learning journey? -->
+
+
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1000&color=0000FF&center=true&vCenter=true&width=700&lines=Welcome+to+Open+Source+Contribution!;GirlScript+Summer+of+Code+GSSoC+2025!+🎉;Start+this+repo+now!;Fork+it+🚀;Contribute+to+it+🛠️;Commit+to+your+forked+repo+💾;Create+a+Pull+Request+without+conflicts+✅" alt="Typing SVG" />
+</div>
+
 
 **Your Personalized Smart Learning & Placement Hub**
 
