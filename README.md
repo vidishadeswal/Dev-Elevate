@@ -370,12 +370,6 @@ Includes:
 
 ---
 
-### 🌐 Multi-Language Support
-- Hindi, Odia, Bengali, Telugu (upcoming)
-- Regional event/news integration
-
----
-
 ### 🗺️ Roadmap Generator
 - Auto-create plan for:
   - “DSA in 60 Days”
