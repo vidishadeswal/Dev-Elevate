@@ -9,7 +9,7 @@ This document outlines the **phased development plan** for this platform.
 - [x] UI for login/signup (User + Admin)
 - [x] User Dashboard
 - [x] Resume Builder Module
-- [x] Notes Upload
+- [] Notes Upload
 - [x] Authentication (JWT)
 
 ---
