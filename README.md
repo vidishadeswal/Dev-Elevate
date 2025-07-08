@@ -69,6 +69,41 @@
 🎉 **I can’t wait to welcome new contributors** from GSSoC 2025 to this DevElevate project family!
 Let’s build, learn, and grow together — one commit at a time. 🔥👨‍💻👩‍💻
 
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+> ⚠️ **📢 Important Note – Must Read Before You Contribute!** ⚠️
+
+🔐 **Login/Sign Up page is now live** and appears first for both **👤 User** and **🛡️ Admin** roles.
+📂 **Database integration is not yet active**, but you can still **freely explore** the platform!
+
+➡️ **Simply sign up using any random details** as a User or Admin.
+🧠 Your data will be stored **temporarily** in your **browser's cache/global memory**, allowing you to **access your personalized dashboard**.
+
+🖥️ Once logged in, you’ll be able to:
+
+* 🔍 **Explore the full UI**
+* 🧪 **Preview dashboard pages**
+* 🛠️ **Start contributing** to build real-time features like:
+
+  * Admin Panel 🛡️
+  * Course Manager 📚
+  * Profile Settings ⚙️
+  * Content Upload System 📤
+
+---
+
+⚠️ **🚨 Attention Contributors!** 🚨
+📖 Please make sure to **thoroughly read the entire `README.md`** to understand:
+
+* 👨‍💼 What the **Admin** wants to build
+* 🔐 Important notes on **security practices**
+* 🤝 Guidelines for **how to contribute successfully**
+
+🔁 This will help avoid confusion, reduce merge conflicts, and ensure your PR gets accepted faster!
+
+🎯 Let’s build DevElevate together — stronger, smarter, and open for all! 💖🚀
+
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 ![logo](https://github.com/user-attachments/assets/8b804ec3-1390-4acb-84c7-adf1050fd54c)
