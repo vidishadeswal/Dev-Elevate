@@ -39,8 +39,8 @@ Click the `Fork` button on the top right corner of the repository.
 ### 3. 📥 Clone Your Fork
 
 ```bash
-git clone https://github.com/<your-username>/Dev-Elevate.git
-cd Dev-Elevate
+git clone https://github.com/abhisek2004/Dev-Elevate.git
+cd DevElevate
 ```
 
 ### 4. 📦 Install Dependencies
