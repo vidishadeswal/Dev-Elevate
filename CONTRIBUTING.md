@@ -1,161 +1,192 @@
-# 🛠️ CONTRIBUTING GUIDELINES – DevElevate
+# **Contributing Guidelines** 📄
 
-Welcome to **DevElevate**! 🚀
+This documentation contains a set of guidelines to help you during the contribution process.
+We are happy to welcome all the contributions from anyone willing to improve/add new scripts to this project.
+Thank you for helping out and remember, **no contribution is too small.**
+<br>
+Please note we have a [code of conduct](CODE_OF_CONDUCT.md) please follow it in all your interactions with the project.
 
-We’re thrilled to have you here and super excited about your interest in contributing to our open-source platform.
-DevElevate is built to empower students, developers, and career seekers with intelligent tools and interactive learning experiences.
+<hr>
 
-**✨ No contribution is too small – every bit helps!**
+## Contribution
 
-Please also make sure to read and follow our [Code of Conduct](CODE_OF_CONDUCT.md). 💖
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
----
+- If you have any suggestions for the project, such as reporting a bug, improving the UI, or enhancing the README.md file, feel free to **open an issue** to discuss it or directly create a pull request with the necessary changes.
+- Please make sure to check your spelling and grammar.
+- Create individual pull requests for each suggestion to keep changes focused and manageable.
 
-## 📌 Contribution Philosophy
+Your involvement helps to improve the project and make it better for everyone. Thank you for your contributions!
 
-Contributions are what make the **open-source community** an incredible place to learn, build, and grow. We welcome:
+<hr>
 
-- 🐞 Bug Fixes
-- ✨ New Features
-- 🎨 UI/UX Enhancements
-- 📄 Documentation Improvements
-- 🧪 Test Case Additions
-- 🧠 AI Prompt or Dataset Enhancements
+## How to Contribute ?
 
-> 💡 **First-time contributor?** Don’t worry, we got you! Just follow the step-by-step guide below.
+1. **Star the Repo**
 
----
+2. **Fork the Project:**
 
-## 🚀 Quick Start – How to Contribute
+   - Click on the "Fork" button at the top right corner of the repository's page on GitHub to create your own copy of the project.
 
-### 1. 🌟 Star the Repository
+3. **Clone Your Forked Repository:**
 
-Give this repo a star to show your support!
+   - Clone the forked repository to your local machine using the following command:
 
-### 2. 🍴 Fork This Repo
+   ```sh
+    git clone https://github.com/<your_user_name>/sih-hospital_.git
+   ```
 
-Click the `Fork` button on the top right corner of the repository.
+   - Navigate to the project folder:
 
-### 3. 📥 Clone Your Fork
+   ```sh
+    cd sih-hospital_
+   ```
 
-```bash
-git clone https://github.com/abhisek2004/Dev-Elevate.git
-cd DevElevate
-```
+4. **Install npm packages:**
 
-### 4. 📦 Install Dependencies
+   ```sh
+   npm install
+   ```
 
-```bash
-npm install
-```
+5. **Run index.html with any browser (example: chrome etc).**
 
-### 5. 🚀 Run the Project (Dev Mode)
+6. **Add a reference (remote) to the original repository:**
 
-```bash
-npm run dev
-```
+   ```sh
+   git remote add upstream https://github.com/ManaS066/sih-hospital_.git
+   ```
 
-> **Note:** Initial login/register forms (user/admin) are UI-based only. Data is stored temporarily in memory/cache. Dashboard access is possible post sign-up.
+7. **Check the remotes for this repository.**
 
-### 6. 🔄 Add Remote Upstream
+   ```sh
+   git remote -v
+   ```
 
-```bash
-git remote add upstream https://github.com/abhisek2004/Dev-Elevate.git
-git pull upstream main
-```
+8. **Always take a pull from the upstream repository to your master branch to keep it at par with the main project (updated repository).**
 
-### 7. 🌿 Create New Branch
+   ```sh
+   git pull upstream main
+   ```
 
-```bash
-git checkout -b <your-feature-name>
-```
+9. **Create a New Branch and Move to the Branch:**
 
-### 8. 💻 Make Your Changes
+   - Create a new branch for your changes and move to that branch using the following commands:
 
-Work your magic! Fix bugs, enhance UI, write logic — you name it!
+   ```sh
+   git checkout -b <branch-name>
+   ```
 
-### 9. ✅ Add & Commit Changes
+10. **Add Your Changes:**
 
-```bash
-git add .
-git commit -m "✨ Your concise commit message here"
-```
+    - After you have made your changes, check the status of the changed files using the following command:
 
-### 10. 🚀 Push to Your Fork
+    ```sh
+    git status -s
+    ```
 
-```bash
-git push origin <your-branch-name>
-```
+    - Add all the files to the staging area using the following command:
 
-### 11. 🔁 Create Pull Request (PR)
+    ```sh
+    git add .
+    ```
 
-Go to your forked repo, click on `Compare & Pull Request`, and submit your changes.
+    or add specific files using:
 
----
+    ```sh
+    git add <file_name1> <file_name2>
+    ```
 
-## 🧪 Contribution with GitHub Desktop (Alternative)
+11. **Commit Your Changes:**
 
-1. Clone the repo from GitHub Desktop
-2. Switch/create a feature branch
-3. Make your changes in your code editor
-4. Commit & push via GitHub Desktop
-5. Open PR on GitHub website
+    - Commit your changes with a descriptive message using the following command:
 
----
+    ```sh
+    git commit -m "<EXPLAIN-YOUR_CHANGES>"
+    ```
 
-## 🧩 What Can You Work On?
+12. **Push Your Changes:**
+    - Push your changes to your forked repository on GitHub using the following command:
+    ```sh
+    git push origin <branch-name>
+    ```
 
-- `frontend/`: UI components, responsiveness, dark mode, accessibility
-- `backend/`: APIs, auth, DB models, middleware
-- `AI/`: Study Buddy GPT integration, prompt improvements
-- `utils/`: Tools, resume engine, file conversion, etc.
-- `docs/`: Improve README, add guides, GIFs, or flowcharts
+### Creating Pull Request
 
-We also welcome:
+13. **Open a Pull Request:**
+    - Go to the GitHub page of your forked repository, and you should see an option to create a pull request. Click on it, provide a descriptive title and description for your pull request, and then submit it.
 
-- New roadmap or quiz content
-- Resume templates
-- AI datasets or chatbot prompts
+<hr>
 
----
+### Alternatively contribute using GitHub Desktop
 
-## 📝 Issue Report Process
+<hr>
 
-1. Go to [Issues](https://github.com/abhisek2004/Dev-Elevate/issues)
-2. Describe the bug/feature clearly
-3. Add appropriate labels (e.g., `bug`, `feature`, `good first issue`)
-4. Wait to be assigned before starting work
+1. **Open GitHub Desktop:**
 
----
+   - Launch GitHub Desktop and log in to your GitHub account if needed.
 
-## 🚀 Pull Request Process
+2. **Clone the Repository:**
 
-1. Self-review your code ✅
-2. Ensure proper formatting, variable names, and comments 💬
-3. Attach screenshots/gifs if UI related 🖼️
-4. Mention related issue using `Closes #issue_number`
-5. Wait for review — we’ll provide feedback soon 👨‍💻👩‍💻
+   - If you haven't cloned the SwapReads repository yet, click on the "File" menu and select "Clone Repository."
+   - Choose the SwapReads repository from the list and clone it to your local machine.
 
----
+3. **Switch to the Correct Branch:**
 
-## 🧠 Need Help?
+   - Ensure you're on the branch you want to submit a pull request for.
+   - If needed, switch branches by clicking on the "Current Branch" dropdown and selecting the appropriate branch.
 
-Check out these handy resources:
+4. **Make Changes:**
 
-- [How to Fork a Repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
-- [How to Create a PR](https://opensource.com/article/19/7/create-pull-request-github)
-- [GitHub Docs](https://docs.github.com/en)
-- Or ask in our Discussions/Discord group! 💬
+   - Edit the code or files in the repository using your preferred code editor.
 
-You can also contact Project Mentor:
-**Abhisek Panda** – [abhisek2004panda@gmail.com](mailto:abhisek2004panda@gmail.com)
+5. **Commit Changes:**
 
----
+   - In GitHub Desktop, you'll see a list of changed files. Check the box next to the files you want to commit.
+   - Enter a summary and description for your changes, then click "Commit to [branch name]" to commit to your local branch.
 
-## 💖 Thank You!
+6. **Push Changes to GitHub:**
 
-Thanks a ton for being here and showing interest! Your contribution, big or small, means a lot to us.
+   - After committing, click "Push origin" in the top right corner of GitHub Desktop to push your changes to your forked repository on GitHub.
 
-> _Let's build something impactful together with DevElevate!_
+7. **Create a Pull Request:**
 
-Happy coding! ✨
+   - Go to GitHub, navigate to your fork of the SwapReads repository, and click "Compare & pull request."
+
+8. **Review and Submit:**
+
+   - On the pull request page, review your changes and add any necessary information (title, description, etc.).
+   - When ready, click "Create pull request" to submit.
+
+9. **Wait for Review:**
+   - The project maintainers will review your pull request. They may provide feedback or request changes before merging it into the main SwapReads repository.
+
+## **Issue Report Process 📌**
+
+1. Go to the project's issues.
+2. Give proper description for the issues.
+3. Don't spam to get the assignment of the issue 😀.
+4. Wait for till someone is looking into it !.
+5. Start working on issue only after you got assigned that issue 🚀.
+
+## **Pull Request Process 🚀**
+
+1. Ensure that you have self reviewed your code 😀
+2. Make sure you have added the proper description for the functionality of the code
+3. I have commented my code, particularly in hard-to-understand areas.
+4. Add screenshot it help in review.
+5. Submit your PR by giving the necesarry information in PR template and hang tight we will review it really soon 🚀
+
+<hr>
+
+## **Need some help regarding the basics?🤔**
+
+You can refer to the following articles on basics of Git and Github and also contact the Project Mentors,
+in case you are stuck:
+
+- [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
+- [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-an-issue-or-pull-request)
+- [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
+- [Getting started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
+- [Learn GitHub from Scratch](https://docs.github.com/en/get-started/start-your-journey/git-and-github-learning-resources)
+
+# **Thank you for contributing💗**
