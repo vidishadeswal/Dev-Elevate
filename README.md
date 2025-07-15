@@ -535,7 +535,12 @@ Includes:
 
 ## 🌐 Connect with Me
 
-![Selected Project Admin badge png](https://github.com/user-attachments/assets/22605f6d-f782-4ad9-a274-3373ab3f07f4) |  <img width="440" height="567" alt="Abhisek Panda_DSC0019" src="https://github.com/user-attachments/assets/a92d4e36-c38a-4af2-bbfa-aae37e35ccbf" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/22605f6d-f782-4ad9-a274-3373ab3f07f4" alt="Selected Project Admin badge" width="200"/>
+  &nbsp;&nbsp;&nbsp;
+  <img src="https://github.com/user-attachments/assets/a92d4e36-c38a-4af2-bbfa-aae37e35ccbf" alt="Abhisek Panda_DSC0019" width="200"/>
+</p>
+
 
 - 👨‍💻 **Website Creator:** [Abhisek Panda](https://abhisekpanda072.vercel.app)
 - 🌍 **Portfolio:** [🌐 abhisekpanda072.vercel.app](https://abhisekpanda072.vercel.app)
