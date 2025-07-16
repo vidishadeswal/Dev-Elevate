@@ -52,7 +52,6 @@
 </div>
 
 
-## 🎯 Open Source Programmes ⭐
 
 🌟 **Exciting News...**
 
