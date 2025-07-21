@@ -512,21 +512,13 @@ Includes:
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 
-### ⭐ Stargazers
+### ⭐ Stargazers & 🍴 Forkers
 
-<div align='center'>
+<div align="center">
 
-[![Stargazers repo roster for @abhisek2004/Dev-Elevate](https://reporoster.com/stars/abhisek2004/Dev-Elevate)](https://github.com/abhisek2004/Dev-Elevate/stargazers)
-
-</div>
-
----
-
-### 🍴 Forkers
-
-<div align='center'>
-
-[![Forkers repo roster for @abhisek2004/Dev-Elevate](https://reporoster.com/forks/abhisek2004/Dev-Elevate)](https://github.com/abhisek2004/Dev-Elevate/network/members)
+![GitHub stars](https://img.shields.io/github/stars/abhisek2004/Dev-Elevate?style=social)
+&nbsp;&nbsp;
+![GitHub forks](https://img.shields.io/github/forks/abhisek2004/Dev-Elevate?style=social)
 
 </div>
 
