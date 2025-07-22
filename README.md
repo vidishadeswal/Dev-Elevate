@@ -224,6 +224,49 @@ A powerful admin dashboard to manage the platform without code:
 
 ---
 
+### ⚙️ Signup Flow – Auto Welcome Mail + Secure Data Storage
+
+Hey Devs 👋
+
+For both **Admin** and **User** registrations, we've got a sleek email + database flow in place to boost onboarding experience and security 🚀
+
+---
+
+📧 **After Signup – Auto Welcome Mail**
+Every time a new **user** or **admin** signs up, they’ll receive an instant welcome email 💌 that includes:
+
+* 🧾 Their **username**
+* 🔐 A **default password** (for admins only)
+* 💬 A friendly greeting and motivation to explore the platform
+* 🔁 Reset password option (via email)
+
+All this is powered by our mail system connected to the admin email:
+
+```
+my_email = "nicdelhi2024@gmail.com"
+code = "zuff vkvx pamt kdor"  # App-specific password for secure SMTP (Gmail)
+```
+
+---
+
+📂 **Data Storage – MongoDB Atlas**
+All user/admin credentials and email logs are safely stored using **MongoDB Atlas** 💾
+
+Here's the current connection setup:
+
+```
+pymongo.MongoClient(
+  "mongodb+srv://abhisekpanda2004guddul:Y3pU0wNKOW8r1ea7@cluster0.0khgj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+)
+```
+
+🧪 **Test Locally First**
+Before pushing to production, test the signup + mail flow on **localhost**. Make sure emails are triggered, and data is saved correctly in the DB.
+
+Once confirmed — go ahead and connect to the live MongoDB Atlas cluster for full deployment 🚀
+
+---
+
 #### 📌 Summary of What’s Built:
 
 | Feature               | Functionality                                          |
