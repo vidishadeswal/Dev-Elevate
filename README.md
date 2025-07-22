@@ -103,11 +103,9 @@ Let’s build, learn, and grow together — one commit at a time. 🔥👨‍�
 
 <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
-![logo](https://github.com/user-attachments/assets/8b804ec3-1390-4acb-84c7-adf1050fd54c)
-
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/8b804ec3-1390-4acb-84c7-adf1050fd54c" alt="logo" width="180" height="180">
+  <img src="https://github.com/user-attachments/assets/8b804ec3-1390-4acb-84c7-adf1050fd54c" alt="logo" width="200" height="200">
 </p>
 
 
