@@ -253,9 +253,24 @@ const UserProfile: React.FC = () => {
                       placeholder="Tell us about yourself..."
                     />
                   ) : (
-                    <p className={`${globalState.darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                      {user.bio || 'No bio added yet.'}
-                    </p>
+                    user.bio ? (
+                      <p className={`${globalState.darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
+                        {user.bio}
+                      </p>
+                    ) : (
+                      <div>
+                        <p className="text-gray-500 italic flex items-center gap-2">
+                          <span role="img" aria-label="memo"></span> Add a short bio about yourself to help others know you better!
+                        </p>
+                        <button
+                          className="text-blue-600 underline mt-2"
+                          onClick={() => setIsEditing(true)}
+                          type="button"
+                        >
+                          Edit Bio
+                        </button>
+                      </div>
+                    )
                   )}
                 </div>
 
