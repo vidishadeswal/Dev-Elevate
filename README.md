@@ -88,7 +88,17 @@ Let’s build, learn, and grow together — one commit at a time. 🔥👨‍�
   - Profile Settings ⚙️
   - Content Upload System 📤
 
----
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
+
+## 📘 Project Documentation
+
+We’ve documented everything in detail including architecture, API structure, database models, UI flows, and more.  
+Click the link below to explore the complete guide:
+
+[📄 View Full DevElevate Documentation (Google Docs)](https://docs.google.com/document/d/1oHgo5GmPDQu6eV9ND3VrYcpi0Dwvb-wWZi-lMgjFAH8/edit?usp=sharing)
+
+
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%">
 
 ⚠️ **🚨 Attention Contributors!** 🚨
 📖 Please make sure to **thoroughly read the entire `README.md`** to understand:
