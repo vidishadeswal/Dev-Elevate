@@ -1,10 +1,26 @@
 import React, { useState } from 'react';
 import { useGlobalState } from '../../contexts/GlobalContext';
 import { BookOpen, Code, Database, Brain, PlayCircle, FileText, CheckCircle } from 'lucide-react';
+import Toast from '../Layout/Toast';
 
 const LearningHub: React.FC = () => {
   const { state, dispatch } = useGlobalState();
   const [selectedTrack, setSelectedTrack] = useState('dsa');
+  const [toastMessage, setToastMessage] = useState("");
+
+  const alertHandler = (module: { id: string; title: string; topics: string[]; completed: boolean }, type?: string) => {
+    let message = "";
+    if(type === "Notes"){
+        message = `Notes for ${module.title} will be available soon!`;
+    }
+    else if(module.completed){
+        message = `Review for ${module.title} will be available soon!`;
+    }
+    else{
+        message = `${module.title} module will be available soon!`;
+    }
+    setToastMessage(message);
+  };
 
   const learningTracks = {
     dsa: {
@@ -70,6 +86,10 @@ const LearningHub: React.FC = () => {
 
   return (
     <div className={`min-h-screen ${state.darkMode ? 'bg-gray-900' : 'bg-gray-50'} transition-colors duration-200`}>
+        {/* Displays toast notification */}
+        {toastMessage && (
+            <Toast message={toastMessage} onClose={() => setToastMessage("")} darkMode={state.darkMode} />
+        )}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="mb-8">
           <h1 className={`text-3xl font-bold ${state.darkMode ? 'text-white' : 'text-gray-900'} mb-2`}>
@@ -199,7 +219,7 @@ const LearningHub: React.FC = () => {
                         }`}
                       >
                         <PlayCircle className="w-4 h-4" />
-                        <span>{module.completed ? 'Review' : 'Start Learning'}</span>
+                        <span onClick={() => alertHandler(module)}>{module.completed ? 'Review' : 'Start Learning'}</span>
                       </button>
                       <button className={`flex items-center space-x-2 px-4 py-2 rounded-lg border font-medium transition-colors ${
                         state.darkMode
@@ -207,7 +227,7 @@ const LearningHub: React.FC = () => {
                           : 'border-gray-300 text-gray-700 hover:bg-gray-50'
                       }`}>
                         <FileText className="w-4 h-4" />
-                        <span>Notes</span>
+                        <span onClick={() => alertHandler(module, "Notes")}>Notes</span>
                       </button>
                     </div>
                   </div>
