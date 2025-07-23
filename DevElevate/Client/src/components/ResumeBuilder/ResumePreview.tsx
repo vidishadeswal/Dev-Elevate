@@ -1,67 +1,89 @@
 import React from 'react';
 import { useGlobalState } from '../../contexts/GlobalContext';
 import { Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
+interface ResumePreviewProps {
+  sections?: {
+    personal: boolean;
+    experience: boolean;
+    education: boolean;
+    projects: boolean;
+    skills: boolean;
+  };
+}
 
-const ResumePreview: React.FC = () => {
+const ResumePreview: React.FC<ResumePreviewProps> = ({ sections }) => {
   const { state } = useGlobalState();
 
   if (!state.resume) return null;
 
+  // Default: if no sections prop, show all
+  const show = sections || {
+    personal: true,
+    experience: true,
+    education: true,
+    projects: true,
+    skills: true,
+  };
+
   return (
     <div className={`max-w-4xl mx-auto ${state.darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'} p-8 rounded-lg shadow-lg`}>
       {/* Header */}
-      <div className="border-b-2 border-gray-200 dark:border-gray-700 pb-6 mb-6">
-        <h1 className="text-3xl font-bold mb-2">
-          {state.resume.personalInfo.name || 'Your Name'}
-        </h1>
-        <div className="flex flex-wrap gap-4 text-sm">
-          {state.resume.personalInfo.email && (
-            <div className="flex items-center space-x-1">
-              <Mail className="w-4 h-4" />
-              <span>{state.resume.personalInfo.email}</span>
-            </div>
-          )}
-          {state.resume.personalInfo.phone && (
-            <div className="flex items-center space-x-1">
-              <Phone className="w-4 h-4" />
-              <span>{state.resume.personalInfo.phone}</span>
-            </div>
-          )}
-          {state.resume.personalInfo.location && (
-            <div className="flex items-center space-x-1">
-              <MapPin className="w-4 h-4" />
-              <span>{state.resume.personalInfo.location}</span>
-            </div>
-          )}
-          {state.resume.personalInfo.linkedin && (
-            <div className="flex items-center space-x-1">
-              <Linkedin className="w-4 h-4" />
-              <a href={state.resume.personalInfo.linkedin} className="text-blue-600 hover:underline">
-                LinkedIn
-              </a>
-            </div>
-          )}
-          {state.resume.personalInfo.github && (
-            <div className="flex items-center space-x-1">
-              <Github className="w-4 h-4" />
-              <a href={state.resume.personalInfo.github} className="text-blue-600 hover:underline">
-                GitHub
-              </a>
-            </div>
-          )}
-        </div>
-      </div>
-
-      {/* Professional Summary */}
-      {state.resume.summary && (
-        <div className="mb-6">
-          <h2 className="text-xl font-bold mb-3">Professional Summary</h2>
-          <p className="text-sm leading-relaxed">{state.resume.summary}</p>
+      {show.personal && (
+        <div className="border-b-2 border-gray-200 dark:border-gray-700 pb-6 mb-6">
+          <h1 className="text-3xl font-bold mb-2">
+            {state.resume.personalInfo.name || 'Your Name'}
+          </h1>
+          <div className="flex flex-wrap gap-4 text-sm">
+            {state.resume.personalInfo.email && (
+              <div className="flex items-center space-x-1">
+                <Mail className="w-4 h-4" />
+                <span>{state.resume.personalInfo.email}</span>
+              </div>
+            )}
+            {state.resume.personalInfo.phone && (
+              <div className="flex items-center space-x-1">
+                <Phone className="w-4 h-4" />
+                <span>{state.resume.personalInfo.phone}</span>
+              </div>
+            )}
+            {state.resume.personalInfo.location && (
+              <div className="flex items-center space-x-1">
+                <MapPin className="w-4 h-4" />
+                <span>{state.resume.personalInfo.location}</span>
+              </div>
+            )}
+            {state.resume.personalInfo.linkedin && (
+              <div className="flex items-center space-x-1">
+                <Linkedin className="w-4 h-4" />
+                <a href={state.resume.personalInfo.linkedin} className="text-blue-600 hover:underline">
+                  LinkedIn
+                </a>
+              </div>
+            )}
+            {state.resume.personalInfo.github && (
+              <div className="flex items-center space-x-1">
+                <Github className="w-4 h-4" />
+                <a href={state.resume.personalInfo.github} className="text-blue-600 hover:underline">
+                  GitHub
+                </a>
+              </div>
+            )}
+          </div>
         </div>
       )}
 
+      {/* Professional Summary */}
+{show.personal && state.resume.summary && (
+  <div className="mb-6 break-words whitespace-pre-wrap">
+    <h2 className="text-xl font-bold mb-3">Professional Summary</h2>
+    <p className="text-sm leading-relaxed">{state.resume.summary}</p>
+  </div>
+)}
+
+
+
       {/* Experience */}
-      {state.resume.experience.length > 0 && (
+      {show.experience && state.resume.experience.length > 0 && (
         <div className="mb-6">
           <h2 className="text-xl font-bold mb-3">Experience</h2>
           {state.resume.experience.map((exp, index) => (
@@ -82,7 +104,7 @@ const ResumePreview: React.FC = () => {
       )}
 
       {/* Education */}
-      {state.resume.education.length > 0 && (
+      {show.education && state.resume.education.length > 0 && (
         <div className="mb-6">
           <h2 className="text-xl font-bold mb-3">Education</h2>
           {state.resume.education.map((edu, index) => (
@@ -101,7 +123,7 @@ const ResumePreview: React.FC = () => {
       )}
 
       {/* Projects */}
-      {state.resume.projects.length > 0 && (
+      {show.projects && state.resume.projects.length > 0 && (
         <div className="mb-6">
           <h2 className="text-xl font-bold mb-3">Projects</h2>
           {state.resume.projects.map((project, index) => (
@@ -134,10 +156,9 @@ const ResumePreview: React.FC = () => {
       )}
 
       {/* Skills */}
-      {(state.resume.skills.technical.length > 0 || state.resume.skills.soft.length > 0) && (
+      {show.skills && (state.resume.skills.technical.length > 0 || state.resume.skills.soft.length > 0) && (
         <div className="mb-6">
           <h2 className="text-xl font-bold mb-3">Skills</h2>
-          
           {state.resume.skills.technical.length > 0 && (
             <div className="mb-3">
               <h3 className="font-semibold mb-2">Technical Skills</h3>
@@ -153,7 +174,6 @@ const ResumePreview: React.FC = () => {
               </div>
             </div>
           )}
-
           {state.resume.skills.soft.length > 0 && (
             <div>
               <h3 className="font-semibold mb-2">Soft Skills</h3>
