@@ -88,7 +88,7 @@ const LearningHub: React.FC = () => {
     <div className={`min-h-screen ${state.darkMode ? 'bg-gray-900' : 'bg-gray-50'} transition-colors duration-200`}>
         {/* Displays toast notification */}
         {toastMessage && (
-            <Toast message={toastMessage} onClose={() => setToastMessage("")} />
+            <Toast message={toastMessage} onClose={() => setToastMessage("")} darkMode={state.darkMode} />
         )}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="mb-8">
