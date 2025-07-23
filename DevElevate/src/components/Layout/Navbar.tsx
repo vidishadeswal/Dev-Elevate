@@ -23,20 +23,20 @@ import ProfileDropdown from './ProfileDropdown';
 
 const Navbar: React.FC = () => {
   const { state: authState } = useAuth();
-  const { state, dispatch } = useGlobalState();
+  const { state, dispatch: globalDispatch } = useGlobalState();
   const location = useLocation();
   const [showSearch, setShowSearch] = useState(false);
   const [showNotifications, setShowNotifications] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
-  const navItems = [
-    { path: '/', icon: Home, label: 'Dashboard' },
-    { path: '/learning', icon: BookOpen, label: 'Learning Hub' },
-    { path: '/chatbot', icon: MessageSquare, label: 'Study Buddy' },
-    { path: '/news', icon: Newspaper, label: 'Tech Feed' },
-    { path: '/resume', icon: FileText, label: 'Resume Builder' },
-    { path: '/placement', icon: Target, label: 'Placement Prep' },
+  const navItems: { path: string; icon: any; label: string; activityType: 'module' | 'profile' | 'login' | 'other' }[] = [
+    { path: '/', icon: Home, label: 'Dashboard', activityType: 'other' },
+    { path: '/learning', icon: BookOpen, label: 'Learning Hub', activityType: 'module' },
+    { path: '/chatbot', icon: MessageSquare, label: 'Study Buddy', activityType: 'other' },
+    { path: '/news', icon: Newspaper, label: 'Tech Feed', activityType: 'other' },
+    { path: '/resume', icon: FileText, label: 'Resume Builder', activityType: 'profile' },
+    { path: '/placement', icon: Target, label: 'Placement Prep', activityType: 'other' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -87,6 +87,17 @@ const Navbar: React.FC = () => {
                   <Link
                     key={item.path}
                     to={item.path}
+                    onClick={() => {
+                      globalDispatch({
+                        type: 'ADD_ACTIVITY_LOG_ENTRY',
+                        payload: {
+                          id: 'activity_' + Date.now(),
+                          type: item.activityType,
+                          description: `Visited ${item.label}`,
+                          timestamp: new Date().toISOString(),
+                        },
+                      });
+                    }}
                     className={`flex items-center space-x-2 px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                       isActive(item.path)
                         ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300 shadow-sm'
@@ -137,7 +148,7 @@ const Navbar: React.FC = () => {
 
               {/* Dark mode toggle */}
               <button
-                onClick={() => dispatch({ type: 'TOGGLE_DARK_MODE' })}
+                onClick={() => globalDispatch({ type: 'TOGGLE_DARK_MODE' })}
                 className={`p-2 rounded-lg transition-colors ${
                   state.darkMode ? 'hover:bg-gray-800 text-gray-400 hover:text-white' : 'hover:bg-gray-100 text-gray-600 hover:text-gray-900'
                 }`}

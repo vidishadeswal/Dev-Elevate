@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth } from '../../contexts/AuthContext';
-import { useGlobalState } from '../../contexts/GlobalContext';
+import { useGlobalState, ActivityLogEntry } from '../../contexts/GlobalContext';
 import { 
   User, 
   Mail, 
@@ -22,7 +22,7 @@ import {
 
 const UserProfile: React.FC = () => {
   const { state: authState, updateProfile, changePassword } = useAuth();
-  const { state: globalState } = useGlobalState();
+  const { state: globalState, dispatch: globalDispatch } = useGlobalState();
   const [isEditing, setIsEditing] = useState(false);
   const [showPasswordForm, setShowPasswordForm] = useState(false);
   const [formData, setFormData] = useState({
@@ -40,11 +40,23 @@ const UserProfile: React.FC = () => {
     confirmPassword: ''
   });
   const [passwordError, setPasswordError] = useState('');
+  const [activityTypeFilter, setActivityTypeFilter] = useState<'all' | 'module' | 'profile' | 'login' | 'other'>('all');
+  const [dateFilter, setDateFilter] = useState('');
 
   const handleSaveProfile = async () => {
     try {
       await updateProfile(formData);
       setIsEditing(false);
+      // Add activity log entry for profile update
+      globalDispatch({
+        type: 'ADD_ACTIVITY_LOG_ENTRY',
+        payload: {
+          id: 'activity_' + Date.now(),
+          type: 'profile',
+          description: 'Updated profile information',
+          timestamp: new Date().toISOString(),
+        },
+      });
     } catch (error) {
       console.error('Failed to update profile:', error);
     }
@@ -444,6 +456,58 @@ const UserProfile: React.FC = () => {
                   </p>
                 </div>
               </div>
+            </div>
+
+            {/* Activity Log */}
+            <div className={`${globalState.darkMode ? 'bg-gray-800 border-gray-700' : 'bg-white border-gray-200'} rounded-xl p-6 border shadow-sm`}>
+              <h3 className={`text-xl font-semibold mb-6 ${globalState.darkMode ? 'text-white' : 'text-gray-900'}`}>
+                Activity Log
+              </h3>
+              {/* Filters */}
+              <div className="flex flex-wrap gap-4 mb-4">
+                <select
+                  className="border rounded px-2 py-1"
+                  value={activityTypeFilter}
+                  onChange={e => setActivityTypeFilter(e.target.value as any)}
+                >
+                  <option value="all">All Types</option>
+                  <option value="module">Module</option>
+                  <option value="profile">Profile</option>
+                  <option value="login">Login</option>
+                  <option value="other">Other</option>
+                </select>
+                <input
+                  type="date"
+                  className="border rounded px-2 py-1"
+                  value={dateFilter}
+                  onChange={e => setDateFilter(e.target.value)}
+                />
+              </div>
+              <ul className="space-y-4">
+                {globalState.activityLog.length === 0 && (
+                  <li className="text-gray-400 italic">No activity yet.</li>
+                )}
+                {globalState.activityLog
+                  .filter(entry =>
+                    (activityTypeFilter === 'all' || entry.type === activityTypeFilter) &&
+                    (!dateFilter || entry.timestamp.startsWith(dateFilter))
+                  )
+                  .sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime())
+                  .map((activity, idx) => (
+                    <li key={activity.id} className="flex items-start gap-3">
+                      <div className="mt-1">
+                        {activity.type === 'module' && <BookOpen className="w-5 h-5 text-blue-500" />}
+                        {activity.type === 'profile' && <Edit className="w-5 h-5 text-green-500" />}
+                        {activity.type === 'login' && <User className="w-5 h-5 text-purple-500" />}
+                        {activity.type === 'other' && <Settings className="w-5 h-5 text-gray-400" />}
+                      </div>
+                      <div>
+                        <div className={`${globalState.darkMode ? 'text-white' : 'text-gray-900'} font-medium`}>{activity.description}</div>
+                        <div className="text-xs text-gray-400 mt-1">{activity.timestamp}</div>
+                      </div>
+                    </li>
+                  ))}
+              </ul>
             </div>
           </div>
         </div>

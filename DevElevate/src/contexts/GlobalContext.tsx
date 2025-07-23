@@ -88,6 +88,13 @@ export interface Resume {
   };
 }
 
+export interface ActivityLogEntry {
+  id: string;
+  type: 'module' | 'profile' | 'login' | 'other';
+  description: string;
+  timestamp: string;
+}
+
 export interface GlobalState {
   user: User | null;
   learningProgress: LearningProgress;
@@ -101,6 +108,7 @@ export interface GlobalState {
   dailyGoals: string[];
   completedGoals: string[];
   streakData: { [date: string]: boolean };
+  activityLog: ActivityLogEntry[];
 }
 
 // Actions
@@ -119,7 +127,9 @@ type GlobalAction =
   | { type: 'ADD_DAILY_GOAL'; payload: string }
   | { type: 'COMPLETE_DAILY_GOAL'; payload: string }
   | { type: 'UPDATE_STREAK'; payload: { date: string; completed: boolean } }
-  | { type: 'HYDRATE_STATE'; payload: Partial<GlobalState> };
+  | { type: 'HYDRATE_STATE'; payload: Partial<GlobalState> }
+  | { type: 'ADD_ACTIVITY_LOG_ENTRY'; payload: ActivityLogEntry }
+  | { type: 'SET_ACTIVITY_LOG'; payload: ActivityLogEntry[] };
 
 // Initial state
 const initialState: GlobalState = {
@@ -134,7 +144,8 @@ const initialState: GlobalState = {
   currentModule: 'dashboard',
   dailyGoals: [],
   completedGoals: [],
-  streakData: {}
+  streakData: {},
+  activityLog: [],
 };
 
 // Reducer
@@ -247,6 +258,17 @@ const globalReducer = (state: GlobalState, action: GlobalAction): GlobalState =>
       return {
         ...state,
         ...action.payload
+      };
+    
+    case 'ADD_ACTIVITY_LOG_ENTRY':
+      return {
+        ...state,
+        activityLog: [action.payload, ...state.activityLog],
+      };
+    case 'SET_ACTIVITY_LOG':
+      return {
+        ...state,
+        activityLog: action.payload,
       };
     
     default:
