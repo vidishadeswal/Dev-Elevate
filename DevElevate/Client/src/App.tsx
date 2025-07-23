@@ -1,29 +1,11 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { AuthProvider } from "./contexts/AuthContext";
-import { GlobalProvider } from "./contexts/GlobalContext";
-import ProtectedRoute from "./components/Auth/ProtectedRoute";
-import LoginRegister from "./components/Auth/LoginRegister";
-import UserProfile from "./components/Profile/UserProfile";
-import AdminDashboard from "./components/Admin/AdminDashboard";
-import Navbar from "./components/Layout/Navbar";
-import Footer from "./components/Layout/Footer";
-import Dashboard from "./components/Dashboard/Dashboard";
-import LearningHub from "./components/LearningHub/LearningHub";
-import Chatbot from "./components/Chatbot/Chatbot";
-import TechFeed from "./components/TechFeed/TechFeed";
-import ResumeBuilder from "./components/ResumeBuilder/ResumeBuilder";
-import PlacementPrep from "./components/PlacementPrep/PlacementPrep";
-import PrivacyPolicy from "./components/Legal/PrivacyPolicy";
-import TermsOfService from "./components/Legal/TermsOfService";
-import CreatorPage from "./components/Legal/CreatorPage";
-import Disclaimer from "./components/Legal/Disclaimer";
+
 
 function App() {
   return (
     <AuthProvider>
       <GlobalProvider>
         <Router>
+
           {/* <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col"> */}
             <Routes>
               {/* Public Routes */}
@@ -79,6 +61,9 @@ function App() {
               />
             </Routes>
           {/* </div> */}
+
+          <AppContent />
+
         </Router>
       </GlobalProvider>
     </AuthProvider>

@@ -96,16 +96,17 @@ const NotificationPanel: React.FC<NotificationPanelProps> = ({ isOpen, onClose }
     setNotifications(sampleNotifications);
   }, []);
 
-  const filteredNotifications = notifications.filter(notification => {
+  const filteredNotifications = notifications.filter((notification) => {
     switch (filter) {
-      case 'unread':
+      case "unread":
         return !notification.read;
-      case 'achievements':
-        return notification.type === 'achievement';
-      case 'reminders':
-        return notification.type === 'reminder';
+      case "achievements":
+        return notification.type === "achievement" && !notification.read;
+      case "reminders":
+        return notification.type === "reminder" && !notification.read;
+      case "all":
       default:
-        return true;
+        return !notification.read;
     }
   });
 
@@ -123,6 +124,7 @@ const NotificationPanel: React.FC<NotificationPanelProps> = ({ isOpen, onClose }
     setNotifications(prev =>
       prev.map(notification => ({ ...notification, read: true }))
     );
+    
   };
 
   const deleteNotification = (id: string) => {
