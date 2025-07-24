@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Plus, Check, X } from 'lucide-react';
+import { Plus, Check } from 'lucide-react';
 import { useGlobalState } from '../../contexts/GlobalContext';
 
 const DailyGoals: React.FC = () => {
@@ -15,12 +15,12 @@ const DailyGoals: React.FC = () => {
     }
   };
 
-  const completeGoal = (goal: string) => {
-    dispatch({ type: 'COMPLETE_DAILY_GOAL', payload: goal });
-  };
-
-  const removeGoal = (goal: string) => {
-    dispatch({ type: 'REMOVE_GOAL', payload: goal });
+  const toggleGoal = (goal: string) => {
+    if (state.completedGoals.includes(goal)) {
+      dispatch({ type: 'UNDO_DAILY_GOAL', payload: goal });
+    } else {
+      dispatch({ type: 'COMPLETE_DAILY_GOAL', payload: goal });
+    }
   };
 
   return (
@@ -63,7 +63,7 @@ const DailyGoals: React.FC = () => {
       )}
 
       <div className="space-y-3">
-        {state.dailyGoals.length === 0 ? (
+        {state.dailyGoals.length === 0 && state.completedGoals.length === 0 ? (
           <p className={`text-center py-8 ${state.darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
             No goals set for today. Add one to get started!
           </p>
@@ -76,7 +76,7 @@ const DailyGoals: React.FC = () => {
               }`}
             >
               <button
-                onClick={() => completeGoal(goal)}
+                onClick={() => toggleGoal(goal)}
                 className="flex-shrink-0 w-5 h-5 rounded-full border-2 border-green-500 flex items-center justify-center hover:bg-green-500 transition-colors group"
               >
                 <Check className="w-3 h-3 text-transparent group-hover:text-white" />
@@ -102,9 +102,13 @@ const DailyGoals: React.FC = () => {
                   state.darkMode ? 'bg-gray-700' : 'bg-gray-50'
                 }`}
               >
-                <div className="w-5 h-5 rounded-full bg-green-500 flex items-center justify-center">
+                <button
+                  onClick={() => toggleGoal(goal)}
+                  className="w-5 h-5 rounded-full bg-green-500 flex items-center justify-center hover:bg-red-500 transition-colors"
+                  title="Undo"
+                >
                   <Check className="w-3 h-3 text-white" />
-                </div>
+                </button>
                 <p className={`flex-1 text-sm line-through ${state.darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
                   {goal}
                 </p>
