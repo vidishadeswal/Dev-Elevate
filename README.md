@@ -90,7 +90,7 @@ Click the link below to explore the complete guide:
 > ⚠️ **📢 Important Note – Must Read Before You Contribute!** ⚠️
 
 <!-- New Login Flow GIF -->
-<img src="DevElevate/login-flow/login-flow.gif" alt="Login Flow Demo" width="100%">
+<img src="DevElevate/login-flow.gif" alt="Login Flow Demo" width="100%">
 
 🔐 **Login/Sign Up page is now live** and appears first for both **👤 User** and **🛡️ Admin** roles.
 📂 **Database integration is not yet active**, but you can still **freely explore** the platform!
