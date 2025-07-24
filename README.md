@@ -44,7 +44,7 @@
 
 ---
 
-<img width="3840" height="547" alt="Backend Functional Diagram" src="https://github.com/user-attachments/assets/4c3a308a-e620-4b45-a750-5e36f62bbb75" />
+<img width="3840" height="664" alt="ER Diagram" src="https://github.com/user-attachments/assets/acc7745e-06a1-4d01-a452-55ec8ceea2bc" />
 
 ---
 
