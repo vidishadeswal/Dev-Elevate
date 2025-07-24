@@ -195,6 +195,7 @@ const UserProfile: React.FC = () => {
                     </p>
                   </div>
 
+                  {/* Bio Section */}
                   <div>
                     <label className={`block text-sm font-medium mb-2 ${globalState.darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
                       Bio
@@ -212,24 +213,16 @@ const UserProfile: React.FC = () => {
                         placeholder="Tell us about yourself..."
                       />
                     ) : (
-                      user.bio ? (
-                        <p className={`${globalState.darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
-                          {user.bio}
-                        </p>
-                      ) : (
-                        <div>
-                          <p className="text-gray-500 italic flex items-center gap-2">
-                            <span role="img" aria-label="memo"></span> Add a short bio about yourself to help others know you better!
-                          </p>
-                          <button
-                            className="text-blue-600 underline mt-2"
-                            onClick={() => setIsEditing(true)}
-                            type="button"
-                          >
-                            Edit Bio
-                          </button>
-                        </div>
-                      )
+                      <div>
+                        <p className={`${globalState.darkMode ? 'text-gray-300' : 'text-gray-700'}`}>{formData.bio || <span className="text-gray-500 italic">No bio added yet.</span>}</p>
+                        <button
+                          className="text-blue-600 underline mt-2"
+                          onClick={() => setIsEditing(true)}
+                          type="button"
+                        >
+                          Edit Bio
+                        </button>
+                      </div>
                     )}
                   </div>
 
