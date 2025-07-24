@@ -128,7 +128,8 @@ type GlobalAction =
   | { type: "ADD_DAILY_GOAL"; payload: string }
   | { type: "COMPLETE_DAILY_GOAL"; payload: string }
   | { type: "UPDATE_STREAK"; payload: { date: string; completed: boolean } }
-  | { type: "HYDRATE_STATE"; payload: Partial<GlobalState> };
+  | { type: "HYDRATE_STATE"; payload: Partial<GlobalState> }
+  | { type: "UNDO_DAILY_GOAL"; payload: string }
 
 // Initial state
 const initialState: GlobalState = {
@@ -244,6 +245,15 @@ const globalReducer = (
         ...state,
         completedGoals: [...state.completedGoals, action.payload],
         dailyGoals: state.dailyGoals.filter((goal) => goal !== action.payload),
+      };
+
+    case "UNDO_DAILY_GOAL":
+      return {
+        ...state,
+        completedGoals: state.completedGoals.filter(
+          (goal) => goal !== action.payload
+        ),
+        dailyGoals: [...state.dailyGoals, action.payload],
       };
 
     case "UPDATE_STREAK":
