@@ -38,6 +38,71 @@
     </tbody>
 </table>
 
+
+```mermaid
+  flowchart TD
+  %% === USER AUTH ===
+  A[🧍 User Registers / Login 🔐] --> B[📊 Dashboard Access]
+
+  %% === MAIN MODULES ===
+  B --> C1[📄 Resume Builder]
+  B --> C2[🧭 Learning Roadmap]
+  B --> C3[🤖 AI Chatbot (Interview Prep)]
+  B --> C4[💼 Job Board]
+  B --> C5[🔔 Notifications]
+  B --> C6[📝 Feedback Submission]
+  B --> C7[📚 Quizzes & Results]
+  B --> C8[👤 Profile Management]
+  B --> C9[📊 Dashboard Analytics]
+
+  %% === RESUME BUILDER FLOW ===
+  C1 --> D1[✨ GPT-Powered Resume Enhancer]
+  C1 --> D2[📥 Export as PDF (HTML2PDF)]
+  C1 --> D3[🎨 Choose Resume Theme]
+
+  %% === LEARNING FLOW ===
+  C2 --> D4[🎓 Roadmap Steps]
+  D4 --> D5[🎥 YouTube Integration]
+  D4 --> D6[📘 Linked Learning Modules]
+  D6 --> D7[🧪 Module-wise Quizzes]
+
+  %% === AI CHATBOT FLOW ===
+  C3 --> D8[🧠 GPT-4 API Integration]
+  C3 --> D9[💬 Chat History Logging]
+  C3 --> D10[📌 Use Case Suggestions]
+
+  %% === JOB SYSTEM FLOW ===
+  C4 --> D11[📄 Job Listings (Google Sheets API)]
+  C4 --> D12[📌 Apply to Jobs]
+  C4 --> D13[📁 Application History]
+  C4 --> D14[🔍 AI-Based Job Matching (Future)]
+
+  %% === QUIZZES ===
+  C7 --> D15[🧪 Attempt Quiz]
+  C7 --> D16[📈 View Results]
+  D15 --> D17[🎯 Evaluate Score]
+  D16 --> D18[🎓 Auto-Certification (Future)]
+
+  %% === NOTIFICATIONS & FEEDBACK ===
+  C5 --> D19[📨 Mark as Read / Delete]
+  C6 --> D20[📬 Submit Feedback]
+  D20 --> D21[👨‍💻 Reviewed by Admin (Future)]
+
+  %% === PROFILE MANAGEMENT ===
+  C8 --> D22[🖼️ Update Picture]
+  C8 --> D23[📄 Update Details]
+  C8 --> D24[🔒 Change Password]
+
+  %% === ADMIN (FUTURE) ===
+  Z1[🛡️ Admin Login (Future)] --> Z2[📂 Admin Panel]
+  Z2 --> Z3[📊 User Metrics]
+  Z2 --> Z4[⚙️ Manage Jobs, Courses, Feedback, Users]
+  Z2 --> Z5[📜 System Logs]
+  Z2 --> Z6[🎯 Quiz & Certificate Generator]
+  Z2 --> Z7[📊 Global Analytics + System Control]
+
+---
+
 <h2 align="center">🎯 Open Source Programmes ⭐</h2>
 
 <p align="center">
