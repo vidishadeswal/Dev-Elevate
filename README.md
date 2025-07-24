@@ -40,7 +40,7 @@
 
 ---
 
-    ```mermaid
+```mermaid
   flowchart TD
   
     %% === USER AUTH ===
