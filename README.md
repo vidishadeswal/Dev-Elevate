@@ -39,7 +39,7 @@
 </table>
 
 ---
-<details>
+
 
   🔁 Project Flowchart (DevElevate Platform)
   
@@ -49,7 +49,7 @@
 
 <img width="3840" height="664" alt="ER Diagram" src="https://github.com/user-attachments/assets/acc7745e-06a1-4d01-a452-55ec8ceea2bc" />
 
-</details>
+
 
 <h2 align="center">🎯 Open Source Programmes ⭐</h2>
 
