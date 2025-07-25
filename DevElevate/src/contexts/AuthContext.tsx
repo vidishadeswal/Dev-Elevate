@@ -64,7 +64,7 @@ const initialState: AuthState = {
   users: [],
   sessionToken: null
 };
-
+//logic for auth state
 const authReducer = (state: AuthState, action: AuthAction): AuthState => {
   switch (action.type) {
     case 'LOGIN_START':
